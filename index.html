@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQUERY</title>
+	<script src="js/jquery-3.1.0.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		function go()
+		{
+			$("body")
+			.append("<div id='pieContainer'></div>")
+			;
+
+			$("#pieContainer")
+			.css
+			(
+				{
+					margin: "0 auto",
+					height: "500px",
+					width: "500px",
+					border: "3px solid black",
+					borderRadius: "100%"
+				}
+			)
+			.append("<div class='pieBackground'></div>")
+			;
+
+			$(".pieBackground")
+			.css
+			(
+				{	
+					backgroundColor: "yellow",
+	       	 		position: "absolute",
+	       	 		width: "500px",
+	        		height: "500px",
+	        		borderRadius: "100%"
+				}
+			)
+			;
+
+			$("#pieContainer")
+			.append("<div id='pieSliceBlue' class='hold'></div>")
+			;
+
+			$("#pieContainer")
+			.append("<div id='pieSliceGreen' class='hold'></div>")
+			;
+
+			$("#pieContainer")
+			.append("<div id='pieSliceRed' class='hold'></div>")
+			;
+
+			$(".hold")
+			.append("<div class='pie'></div>")
+			;
+
+			$(".pie")
+			.css
+			(
+				{
+					position: "absolute",
+	        		width: "500px",
+	        		height: "500px",
+	        		borderRadius: "100%",
+	        		clip: "rect(0px, 500px, 500px, 0px)"
+				}
+			)
+			;
+
+			$(".hold")
+			.css
+			(
+				{
+					position: "absolute",
+	        		width: "500px",
+	        		height: "500px",
+	        		borderRadius: "100%",
+	        		clip: "rect(0px, 500px, 500px, 250px)"
+				}
+			)
+			;
+
+			$("#pieSliceBlue")
+			.css
+			(
+				{
+					transform: "rotate(0deg)"
+				}
+			)
+			;
+
+			$("#pieSliceBlue .pie")
+			.css
+			(
+				{
+					backgroundColor: "blue",
+          			transform: "rotate(0deg)"
+				}
+			)
+			;
+
+			$("#pieSliceGreen")
+			.css
+			(
+				{
+					transform: "rotate(180deg)"
+				}
+			)
+			;
+
+			$("#pieSliceGreen .pie")
+			.css
+			(
+				{
+					backgroundColor: "lightgreen",
+          			transform: "rotate(0deg)"
+				}
+			)
+			;
+
+			$("#pieSliceRed")
+			.css
+			(
+				{
+					transform: "rotate(230deg)"
+				}
+			)
+			;
+
+			$("#pieSliceRed .pie")
+			.css
+			(
+				{
+					backgroundColor: "red",
+          			transform: "rotate(0deg)"
+				}
+			)
+			;
+
+		}
+		go();
+	</script>
+</div>
+</body>
+</html>
